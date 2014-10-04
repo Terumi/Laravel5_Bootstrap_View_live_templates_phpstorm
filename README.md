@@ -1,4 +1,4 @@
-Laravel5_Bootstrap_View_live_templates_phpstorm
+Laravel5 Bootstrap3 View live template for Phpstorm
 ===============================================
 
 This is a live template file for phpstorm.
