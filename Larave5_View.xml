@@ -1,0 +1,61 @@
+<templateSet group="Laravel5-View">
+  <template name="newview" value="@extends('$VIEW$')&#10;@section('content')&#10;$END$&#10;@stop" description="New Laravel View" toReformat="false" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="&quot;layouts.master&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="f:o" value="{!! Form::open() !!}&#10;    $END$&#10;{!! Form::close() !!}" description="Form Open" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="f:t" value="&lt;!-- $capitalized_name$ field --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;$id$&quot; class=&quot;control-label&quot;&gt;$label_text$:&lt;/label&gt;&#10;    {!! Form::text('$name$', $value$, ['class'=&gt;'form-control', 'id'=&gt; '$id$']) !!}&#10;&lt;/div&gt;&#10;$END$" description="Form textfield" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label_text" expression="capitalize(name)" defaultValue="capitalized_name&quot;:&quot;" alwaysStopAt="true" />
+    <variable name="id" expression="name" defaultValue="" alwaysStopAt="false" />
+    <variable name="capitalized_name" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="f:p" value="&lt;!-- $capitalized_name$ field --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;$id$&quot; class=&quot;control-label&quot;&gt;$label_text$:&lt;/label&gt;&#10;    {!! Form::password('$name$', ['class'=&gt;'form-control', 'id'=&gt; '$id$']) !!}&#10;&lt;/div&gt;&#10;$END$" description="Form password field" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label_text" expression="capitalize(name)" defaultValue="capitalized_name&quot;:&quot;" alwaysStopAt="true" />
+    <variable name="id" expression="name" defaultValue="" alwaysStopAt="false" />
+    <variable name="capitalized_name" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="f:s" value="&lt;!-- Submit button --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;   &#10;    &lt;button type=&quot;submit&quot; class=&quot;btn btn-$type$&quot;&gt;$text$&lt;/button&gt;   &#10;&lt;/div&gt;&#10;$END$" description="Form submit button" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="enum(&quot;default&quot;, &quot;primary&quot;, &quot;success&quot;, &quot;info&quot;,  &quot;warning&quot;, &quot;danger&quot; )" defaultValue="" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="&quot;Submit&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
