@@ -58,4 +58,9 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="err" value="@if($errors-&gt;any())&#10;&lt;div class=&quot;alert alert-danger alert-dismissible&quot; role=&quot;alert&quot;&gt;&#10; &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;&lt;/button&gt;&#10;    &lt;ul class=&quot;list-unstyled&quot;&gt;&#10;        @foreach($errors-&gt;all() as $error)&#10;            &lt;li&gt;{{$error}}&lt;/li&gt;&#10;        @endforeach&#10;    &lt;/ul&gt;&#10;&lt;/div&gt;&#10;@endif" description="Display page errors" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>

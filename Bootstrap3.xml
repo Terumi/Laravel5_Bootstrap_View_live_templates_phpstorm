@@ -1,81 +1,40 @@
 <templateSet group="Bootstrap3">
-  <template name="clx" value="&lt;div class=&quot;col-lg-$VALUE$&quot;&gt;&#10;$END$&#10;&lt;/div&gt;" description="col-lg" toReformat="false" toShortenFQNames="true">
-    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="b:blq" value="&lt;blockquote&gt;&#10;    &lt;p&gt;#END$&lt;/p&gt;&#10;&lt;/blockquote&gt;" description="bootstrap blockquote" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="cmx" value="&lt;div class=&quot;col-md-$VALUE$&quot;&gt;&#10;$END$&#10;&lt;/div&gt;" description="col-md" toReformat="false" toShortenFQNames="true">
-    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="b:li" value="&lt;ul class=&quot;list-$TYPE$&quot;&gt;&#10;    $END$&#10;&lt;/ul&gt;" description="bootstrap list" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="enum(&quot;unstyled&quot;, &quot;inline&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="csx" value="&lt;div class=&quot;col-sm-$VALUE$&quot;&gt;&#10;$END$&#10;&lt;/div&gt;" description="col-sm" toReformat="false" toShortenFQNames="true">
-    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="b:tbl" value="&lt;table class=&quot;table table-striped&quot;&gt;&#10;    &lt;thead&gt;&#10;        &lt;tr&gt;&#10;            $END$        &#10;        &lt;/tr&gt;&#10;    &lt;/thead&gt;&#10;    &lt;tbody&gt;&#10;        &lt;tr&gt;&#10;        &#10;        &lt;/tr&gt; &#10;    &lt;/tbody&gt; &#10;&lt;/table&gt;" description="bootstrap table" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="cxx" value="&lt;div class=&quot;col-xs-$VALUE$&quot;&gt;&#10;$END$&#10;&lt;/div&gt;" description="col-xs" toReformat="false" toShortenFQNames="true">
-    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML" value="true" />
-    </context>
-  </template>
-  <template name="lun" value="&lt;ul class=&quot;list-unstyled&quot;&gt;&#10;    &lt;li&gt;$END$&lt;/li&gt;&#10;&lt;/ul&gt;" description="list unstyled" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML" value="true" />
-    </context>
-  </template>
-  <template name="blq" value="&lt;blockquote&gt;&#10;    &lt;p&gt;#END$&lt;/p&gt;&#10;&lt;/blockquote&gt;" description="blockquote" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML" value="true" />
-    </context>
-  </template>
-  <template name="lin" value="&lt;ul class=&quot;list-inline&quot;&gt;&#10;    &lt;li&gt;$END$&lt;/li&gt;&#10;&lt;/ul&gt;" description="list inline" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML" value="true" />
-    </context>
-  </template>
-  <template name="tbl" value="&lt;table class=&quot;table table-striped&quot;&gt;&#10;    &lt;thead&gt;&#10;        &lt;tr&gt;&#10;            $END$        &#10;        &lt;/tr&gt;&#10;    &lt;/thead&gt;&#10;    &lt;tbody&gt;&#10;        &lt;tr&gt;&#10;        &#10;        &lt;/tr&gt; &#10;    &lt;/tbody&gt; &#10;&lt;/table&gt;" description="table" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML" value="true" />
-    </context>
-  </template>
-  <template name="imgr" value="&lt;img src=&quot;$URL$&quot; class=&quot;img-responsive&quot; alt=&quot;$ALT$&quot;&gt;&#10;$END$" description="image responsive" toReformat="false" toShortenFQNames="true">
+  <template name="b:img" value="&lt;img src=&quot;$URL$&quot; class=&quot;img-$TYPE$&quot; alt=&quot;$ALT$&quot;&gt;&#10;$END$" description="bootstrap image" toReformat="false" toShortenFQNames="true">
     <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;responsive&quot;, &quot;circle&quot;, &quot;thumbnail&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="ALT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="imgc" value="&lt;img src=&quot;$URL$&quot; class=&quot;img-circle&quot; alt=&quot;$ALT$&quot;&gt;&#10;$END$" description="image circle" toReformat="false" toShortenFQNames="true">
-    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ALT" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="b:cdncss" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;/&gt;" description="bootstrap cdn css" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="imgt" value="&lt;img src=&quot;$URL$&quot; class=&quot;img-thumnail&quot; alt=&quot;$ALT$&quot;&gt;&#10;$END$" description="image thumbnail" toReformat="false" toShortenFQNames="true">
-    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ALT" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML" value="true" />
-    </context>
-  </template>
-  <template name="bcdn-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;/&gt;" description="bootstrap cdn css" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML" value="true" />
-    </context>
-  </template>
-  <template name="bnav" value="&lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;&#10;    &lt;div class=&quot;container-fluid&quot;&gt;&#10;        &lt;div class=&quot;navbar-header&quot;&gt;&#10;            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot;&gt;&#10;                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;&#10;                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;            &lt;/button&gt;&#10;            &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;$NAME$&lt;/a&gt;&#10;        &lt;/div&gt;&#10;        &#10;        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;&#10;            &lt;ul class=&quot;nav navbar-nav&quot;&gt;&#10;                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;&#10;            &lt;/ul&gt;&#10;        &lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/nav&gt;&#10;$END$" description="bootstrap navbar" toReformat="false" toShortenFQNames="true">
+  <template name="b:nav" value="&lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;&#10;    &lt;div class=&quot;container-fluid&quot;&gt;&#10;        &lt;div class=&quot;navbar-header&quot;&gt;&#10;            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot;&gt;&#10;                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;&#10;                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&#10;            &lt;/button&gt;&#10;            &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;$NAME$&lt;/a&gt;&#10;        &lt;/div&gt;&#10;        &#10;        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;&#10;            &lt;ul class=&quot;nav navbar-nav&quot;&gt;&#10;                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;&#10;                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;&#10;            &lt;/ul&gt;&#10;        &lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/nav&gt;&#10;$END$" description="bootstrap navbar" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="bcdn-js" value="&lt;script src=&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;" description="bootstrap cdn js" toReformat="false" toShortenFQNames="true">
+  <template name="b:cdnjs" value="&lt;script src=&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;" description="bootstrap cdn js" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
     </context>
@@ -90,6 +49,13 @@
     <variable name="TYPE" expression="enum(&quot;default&quot;, &quot;primary&quot;, &quot;success&quot;, &quot;info&quot;, &quot;warning&quot;, &quot;danger&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="TXT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="b:c" value="&lt;div class=&quot;col-$SIZE$-$SPAN$&quot;&gt;&#10;    $END$&#10;&lt;/div&gt;" description="bootstrap column" toReformat="false" toShortenFQNames="true">
+    <variable name="SIZE" expression="enum(&quot;lg&quot;, &quot;md&quot;, &quot;sm&quot;, &quot;xs&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SPAN" expression="enum(&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;10&quot;, &quot;11&quot;, &quot;12&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
